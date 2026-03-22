@@ -1,0 +1,138 @@
+/** @format */
+
+.footer {
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+	color: white;
+	padding-top: 60px;
+}
+
+.footer-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+	gap: 40px;
+}
+
+.footer-section h3 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #f39c12;
+}
+
+.footer-logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	margin-bottom: 15px;
+}
+
+.footer-logo-icon {
+	color: #f39c12;
+	width: 32px;
+	height: 32px;
+}
+
+.footer-logo span {
+	font-size: 1.4rem;
+	font-weight: 800;
+	background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.footer-desc {
+	color: rgba(255, 255, 255, 0.7);
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.social-links {
+	display: flex;
+	gap: 12px;
+}
+
+.social-link {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.social-link:hover {
+	background: #f39c12;
+	transform: translateY(-3px);
+}
+
+.footer-section ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-section ul li {
+	margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+	color: #f39c12;
+	padding-left: 5px;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-item svg {
+	color: #f39c12;
+	flex-shrink: 0;
+}
+
+.footer-bottom {
+	margin-top: 50px;
+	padding: 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	text-align: center;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+	.footer-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 640px) {
+	.footer-container {
+		grid-template-columns: 1fr;
+	}
+
+	.footer {
+		padding-top: 40px;
+	}
+}
